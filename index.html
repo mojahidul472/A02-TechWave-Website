@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechWave-Responsiv-Website</title>
-    <link rel="stylesheet" href="styles/style.css">
     <!-- tailwind css link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TechWave-Responsiv-Website</title>
+    <link rel="stylesheet" href="styles/style.css">
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/3aa8a1bdec.js" crossorigin="anonymous"></script>
 
@@ -17,12 +17,15 @@
                px-4 sm:px-8 lg:px-[200px] py-6 sm:py-10 lg:py-16">
             <nav class="flex justify-between  items-center">
                 <img class="w-32 sm:w-40" src="assets/TechWave.png" alt="">
+
+                <!-- list item -->
                 <ul class="hidden md:flex gap-6 lg:gap-12 text-white ">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Episodes</a></li>
                     <li><a href="#">Host</a></li>
                 </ul>
-                    <button class="hidden md:block text-[#FFFFFF] bg-linear-[#F7E93F,#FB09B4,#9100F8] px-5 py-3 rounded-full"><a href="#">Subscribe <i class="fas fa-arrow-right"></i></a></button>
+                    <button class="hidden md:block text-[#FFFFFF] bg-linear-[#F7E93F,#FB09B4,#9100F8] px-6 py-1 rounded-full"><a href="#">Subscribe <i class="fas fa-arrow-right"></i></a></button>
+                    <!-- menu btn -->
                 <div class="md:hidden">
                     <button id="menu-btn" class="text-[#707070] text-2xl">
                     <i class="fas fa-bars"></i>
@@ -33,6 +36,101 @@
     <!-- main section code start -->
     <main>
 
+    <section class="hero-container max-w-[1440px] mx-auto">
+        <div class="relative">
+
+        <!-- Background -->
+         <img class="w-full h-[520px] md:h-auto object-cover"
+            src="assets/hero-bg.png" alt="" >
+        
+
+        <!-- Circle -->
+            <div class="absolute top-[14%] left-1/2 -translate-x-1/2
+                    md:top-[15%] md:left-[38%] md:translate-x-0">
+                <img
+                src="assets/hero-circle.png"
+                alt=""
+                class="w-[180px] sm:w-[220px] md:w-full">
+            </div>
+
+        <!-- Microphone -->
+            <div
+            class="absolute
+                top-[22%] left-1/2 -translate-x-1/2
+                sm:top-[26%]
+                md:top-[30%] md:left-[46%] md:translate-x-0">
+            <img
+                src="assets/microphone.png"
+                alt=""
+                class="w-[90px] sm:w-[110px] md:w-full">
+            </div>
+
+            <!-- new  -->
+            <span
+            class="absolute top-[8%] left-1/2 -translate-x-1/2
+                    md:top-[15%] md:right-[41%] md:left-auto md:translate-x-0
+                    bg-[#00FF88] text-black  font-semibold
+                    px-3 py-1 rounded-full"> NEW
+            </span>
+
+        <!-- text + btn -->
+            <div
+            class="absolute inset-0 flex flex-col items-center justify-center           text-center px-4 z-10  top-[55%] md:mt-12 top-[30%]">
+            <h2 class="text-[28px] sm:text-[36px] md:text-[60px] text-white font-bold">
+                TechWave</h2>
+
+            <p class="text-white text-sm sm:text-base  mb-5">
+                Your daily dose of tech insights, productivity hacks,
+                and personal growth</p>
+
+            <div class="flex gap-3 flex-wrap justify-center">
+                <button
+                class="flex items-center gap-2 text-white px-5 py-2 rounded-full bg-linear-[#F7E93F,#FB09B4,#9100F8]">
+                        
+                <i class="fab fa-spotify"></i>Listen on Spotify</button>
+
+                <button
+                class="flex items-center gap-2 text-[#00FF88] px-5 py-2 rounded-full    border-2 border-[#00FF88]">
+                <i class="far fa-envelope"></i>
+                Subscribe
+                </button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#1A0B2E] max-w-[1440px] mx-auto py-12">
+            <div>
+                <div class="text-center pb-30 text-white">
+                    <h2 class="text-[48px] ">About the Podcast</h2>
+                    <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br class="hidden sm:block">
+                    We break down complex topics into digestible insights, explore productivity strategies that actually work, <br class="hidden sm:block">
+                    and share stories of personal growth from industry leaders. <br class="hidden sm:block">
+                        <br class="hidden sm:block">
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                </div>
+                <hr class="border-gray-50 bg-opacity-10 w-[100%] md:w-[100%] lg:w-[50%]  m-auto mb-15">
+
+                <div class="flex justify-center gap-14 flex-wrap text-center">
+                    <div class="text-white items-center">
+                        <h4 class="text-[48px]  text-[#00FF88]">150K+</h4>
+                        <p class="text-white">Monthly Listeners</p>
+                    </div>
+                    <div class="text-white items-center">
+                        <h4 class="text-[48px] text-[#00FF88]">200+</h4>
+                        <p class="text-white">Episodes Published</p>
+                    </div>
+                    <div class="text-white items-center">
+                        <h4 class="text-[48px] text-[#00FF88]">4.9★</h4>
+                        <p class="text-white">Average Rating</p>
+                    </div>
+                    <div class="text-white items-center">
+                        <h4 class="text-[48px] text-[#00FF88]">50+</h4>
+                        <p class="text-white">Industry Experts</p>
+                    </div>
+                </div>
+            </div>
+    </section>
     </main>
     <!-- footer section code start -->
     <footer>
